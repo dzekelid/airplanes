@@ -12,31 +12,9 @@ modified: "2018-08-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/airplanes/master/_listings/transavia/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Transavia Airports API
-  x-api-slug: transavia-airports-api
-  description: Want to fly affordably to more than 100 destinations in Europe? Book
-    a flight with Transavia!
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28522-airports-api-v2.jpg
-  humanURL: http://transavia.com
-  baseURL: https://api.transavia.com//v2/airports
-  tags: Airplanes
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/airplanes/master/_listings/transavia/openapi.md
-- name: Transavia Flight Offers API
-  x-api-slug: transavia-flight-offers-api
-  description: Want to fly affordably to more than 100 destinations in Europe? Book
-    a flight with Transavia!
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28522-airports-api-v2.jpg
-  humanURL: http://transavia.com
-  baseURL: https://tst.api.transavia.com//v1/flightoffers
-  tags: Airplanes
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/airplanes/master/_listings/transavia/openapi.md
-- name: Transavia Routes API
-  x-api-slug: transavia-routes-api
-  description: returns-all-available-routes
+- name: Routes API v3 - Get all routes by origin and/or destination
+  x-api-slug: get
+  description: Retrieves all routes.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28522-airports-api-v2.jpg
   humanURL: http://transavia.com
   baseURL: https://tst.api.transavia.com//v3/routes
@@ -46,33 +24,19 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/airplanes/master/_listings/transavia/get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/airplanes/master/_listings/transavia/get-openapi.md
-- name: Transavia Routes API
-  x-api-slug: transavia-routes-api
-  description: returns-all-available-routes
+- name: Routes API v3 - Get route by id
+  x-api-slug: id-get
+  description: Gets the route. Note, this request doesn't have a data property in
+    the response.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28522-airports-api-v2.jpg
   humanURL: http://transavia.com
   baseURL: https://tst.api.transavia.com//v3/routes
   tags: Airlines, Travel, General Data, Service API
   properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/airplanes/master/_listings/transavia/get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/airplanes/master/_listings/transavia/get-openapi.md
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/airplanes/master/_listings/transavia/id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/airplanes/master/_listings/transavia/id-get-openapi.md
-- name: Transavia Routes API
-  x-api-slug: transavia-routes-api
-  description: Want to fly affordably to more than 100 destinations in Europe? Book
-    a flight with Transavia!
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28522-airports-api-v2.jpg
-  humanURL: http://transavia.com
-  baseURL: https://tst.api.transavia.com//v3/routes
-  tags: Airplanes
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/airplanes/master/_listings/transavia/openapi.md
 x-common:
 - type: x-api-gallery
   url: http://tradestation.api.gallery.streamdata.io
